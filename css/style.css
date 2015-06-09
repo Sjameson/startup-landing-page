@@ -6,23 +6,33 @@ html {
 body {
 font-family: 'Roboto', sans-serif;
 -webkit-font-smoothing: antialiased;
+line-height: 1;
 }
 
-*, *:before, *after {
-  box-sizing: inherit;
+ol, ul {
+  list-style: none; 
+  }
+
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
 }
 
  /* Navigation Section */
 
 .top-navigation {
+  top: 0;
   background-color: #fff; 
-  max-width: 970px;
-  min-width: 640px;
+  width: 100%;
   margin: 0 auto;
+  position: fixed;
+  z-index: 9999; 
+  border-bottom: 1px solid #DDD; 
 }
 
 .top-navigation > .content, .top-navigation .logo {
-  height: 4.375rem;
+    height: 4.375rem;
 }
 
 .top-navigation .links {
@@ -46,6 +56,7 @@ font-family: 'Roboto', sans-serif;
   cursor: pointer;
   color: #333333;
 }
+
 
  /* Introduction Section */
 
@@ -100,6 +111,42 @@ button:hover {
   border-color: #cf3d0e; 
   cursor: pointer; 
 }
+
+
+ /* The Three Case Images */
+
+ .cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+ }
+
+ .cases .content {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+ }
+
+ .cases h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem; 
+  font-weight: 300;
+ }
+
+ .cases .devices h3 {
+ color: #1d1e21;
+ font-weight: 400;
+ font-size: 1.563rem;
+ margin: 2.5rem 0px 1.875rem;
+}
+
+.cases .devices li {
+  width: 33.3333333%;
+  float: left;
+}
+
+
 
 
 
